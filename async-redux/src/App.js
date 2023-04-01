@@ -1,11 +1,11 @@
-import { Fragment, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-
-import Cart from './components/Cart/Cart';
-import Layout from './components/Layout/Layout';
-import Products from './components/Shop/Products';
-import Notification from './components/UI/Notification';
-import { sendCartData, fetchCartData } from './store/cart-actions';
+import { Fragment, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import Typewriter from "typewriter-effect";
+import Cart from "./components/Cart/Cart";
+import Layout from "./components/Layout/Layout";
+import Products from "./components/Shop/Products";
+import Notification from "./components/UI/Notification";
+import { sendCartData, fetchCartData } from "./store/cart-actions";
 
 let isInitial = true;
 
@@ -32,6 +32,15 @@ function App() {
 
   return (
     <Fragment>
+      <div>
+        <Typewriter
+          options={{
+            strings: ["Hii all!, This is Ankit Sharma"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
       {notification && (
         <Notification
           status={notification.status}
@@ -48,6 +57,5 @@ function App() {
 }
 
 export default App;
-
 
 // https://react-http-990a7-default-rtdb.firebaseio.com/cart.json
