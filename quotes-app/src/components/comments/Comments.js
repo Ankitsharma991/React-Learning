@@ -25,7 +25,7 @@ const Comments = () => {
   const addedCommentHandler = useCallback(() => {
     sendRequest(quoteId);
   }, [sendRequest, quoteId]);
-  
+ 
   let comments;
   if (status === "pending") {
     comments = (
