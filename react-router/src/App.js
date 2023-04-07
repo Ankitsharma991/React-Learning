@@ -4,7 +4,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import MainHeader from "./components/MainHeader";
 function App() {
-  return (
+  return 
     <div>
       <header>
         <MainHeader />
